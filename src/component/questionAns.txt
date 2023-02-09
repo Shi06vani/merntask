@@ -1,1 +1,59 @@
+Ans 1.____
+
+const fs = require("fs");
+const path = require('path');
+
+const dirPath = path.join(__dirname);
+
+console.log(dirPath);
+
+fs.readdir(dirPath, (err,data)=>{
+    data.forEach((item)=>{
+        console.log(item);
+    }) 
+})
+
+_____________________________________________________________________________________________________
+
+Ans 5____
+
+let n = 6;
+let x=0, y= 0;
+let string = "";
+for (x=1; x<=n; ++x) {
+  // printing star
+  for (y=x; y <= n ; ++y) {
+    if((x == 1) || (y==x) || (y == n)) {
+        string += "*";
+      }
+      else {
+        string += " ";
+      }
+
+  }
+  string += "\n";
+}
+console.log(string);
+
+__________________________________________________________________________________________
+
+Ans 4________
+
+ let num =6;
+let isPrime = true;
+ for(let i =2;i< num;i++){
+
+    if(num%i ==0){
+        isPrime = false;
+
+    }
+ }
+
+ if(isPrime == true){
+    console.log(`${num} is a prime number`)
+ }
+ else{
+    console.log(`${num} is not prime number`)
+  }
+
 
