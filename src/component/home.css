@@ -1,0 +1,100 @@
+.outerbox{
+    /* border: 1px solid rgb(121, 116, 116); */
+    background-color: rgb(140, 190, 190);
+    height: 650px;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.rightbox{
+    /* border: 1px solid gray; */
+    background-color: #f1d653;
+    height: 500px;
+    width:350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_box{
+    /* border: 1px solid gray; */
+    background-color: rgb(91, 124, 113);
+    height: 500px;
+    width:350px;
+    
+    /* background-image: url("../component/images/myimage.jpg"); */
+}
+.small_rightbox{
+
+    /* border: 1px solid gray; */
+    height: 250px;
+    width:250px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    position: relative;
+    box-shadow: 4px 4px 19px 4px rgb(199, 196, 196);
+}
+
+.small_rightbox input{
+
+    margin-bottom: 20px;
+
+    box-shadow: 1px 2px 2px rgb(248, 247, 247);
+    padding: 8px 30px 8px 30px;
+    /* border-radius: 10px; */
+    
+}
+.small_rightbox button{
+    background-color: rgb(40, 115, 115);
+    border: none;
+    color:aliceblue;
+    padding: 10px 80px 10px 80px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.small_rightbox input:focus{
+    border:1px solid white;
+
+}
+.top_header{
+    height: 20px;
+    width:248px;
+    /* border: 1px solid rgb(194, 187, 187); */
+    position: absolute;
+    bottom:300px;
+    top:215px;
+    z-index: 1;
+    border-radius: 9px;
+    padding-bottom: 17px;
+    box-shadow: 1px 2px 2px  rgb(210, 210, 210);
+     background-color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;  
+    
+}
+.small-boxflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left_box img{
+  
+    height: 500px;
+    width:350px;
+   object-fit: cover;
+}
