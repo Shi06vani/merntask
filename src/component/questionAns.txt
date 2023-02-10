@@ -55,5 +55,19 @@ let isPrime = true;
  else{
     console.log(`${num} is not prime number`)
   }
+_________________________________________________________________
+Ans 5-----------------
+
+Student.aggregate([{
+    $lookup: {
+        from: "worksnapsTimeEntries", 
+        localField: "_id",
+        foreignField: "student",
+        as: "worksnapsTimeEntries"
+    }
+}]).exec(function(err, students) {
+    // students contain WorksnapsTimeEntries
+});
+
 
 
