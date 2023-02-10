@@ -56,7 +56,7 @@ let isPrime = true;
     console.log(`${num} is not prime number`)
   }
 _________________________________________________________________
-Ans 5-----------------
+Ans 2----------------
 
 Student.aggregate([{
     $lookup: {
@@ -66,7 +66,7 @@ Student.aggregate([{
         as: "worksnapsTimeEntries"
     }
 }]).exec(function(err, students) {
-    // students contain WorksnapsTimeEntries
+    console.log(students)
 });
 
 
